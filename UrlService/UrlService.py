@@ -17,9 +17,14 @@ BucketName = ""
 
 def GenerateUrl(FileSize , BucketName , FileName , Fields={} , Conditions=[] , expiry=60):
 
-    if(FileSize >  200000000):
+    if(FileSize >  200000000 ):
         url = {}
         url["error"] = "File too large"
+        return url
+
+    if(FileSize <  200 ):
+        url = {}
+        url["error"] = "File too Small"
         return url
     
     Conditions.append(['content-length-range', 200,200000000])

@@ -16,10 +16,10 @@ Sqs_Client = boto3.client("sqs")
 QueueUrl=""
 
 CloudwatchClient = boto3.client("cloudwatch", region_name="eu-central-1")
-Namespace = "Transcoder"
-MetricName = "ScaleOut"
-DimensionName = "Server"
-DimensionValue = "1"
+Namespace = ""
+MetricName = ""
+DimensionName = ""
+DimensionValue = ""
 Value = 1
 
 

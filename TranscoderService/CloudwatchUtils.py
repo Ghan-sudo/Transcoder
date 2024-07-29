@@ -1,12 +1,12 @@
 import boto3
 from Log import *
 
-CloudwatchClient = boto3.client("cloudwatch", region_name="eu-central-1")
-Namespace = "Transcoder"
-MetricName = "ScaleIn"
-DimensionName = "Server"
-DimensionValue = "1"
-Value = 1
+CloudwatchClient = boto3.client("cloudwatch", region_name="")
+Namespace = ""
+MetricName = ""
+DimensionName = ""
+DimensionValue = ""
+Value = 0
 
 
 def SendCloudwatchKillSignal():
