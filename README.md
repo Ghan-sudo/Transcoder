@@ -1,4 +1,4 @@
-# A fault tolerent, Event Driven, distributed video processing pipeline. Implemented ontop of aws
+# A fault tolerant, Event Driven, distributed video processing pipeline. Implemented ontop of aws
 
 REST API Secured with API key using AWS API Gateway.
 Uploads are secured through S3 signed urls with Content-Length size headers and Expiry time of 5 seconds.
